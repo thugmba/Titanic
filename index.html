@@ -7,44 +7,48 @@
 <!--
  /* Font Definitions */
  @font-face
-	{font-family:PMingLiU;
-	panose-1:2 1 6 1 0 1 1 1 1 1;}
-@font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;}
 @font-face
-	{font-family:Aptos;}
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
 @font-face
-	{font-family:Menlo;}
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
 @font-face
-	{font-family:"\@PMingLiU";
-	panose-1:2 1 6 1 0 1 1 1 1 1;}
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0in;
 	margin-right:0in;
 	margin-bottom:8.0pt;
 	margin-left:0in;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-link:"Footer Char";
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
 	margin:0in;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-link:Footer;}
-.MsoChpDefault
-	{font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.gntyacmbe3b
+	{mso-style-name:gntyacmbe3b;}
+span.gntyacmbo3b
+	{mso-style-name:gntyacmbo3b;}
 .MsoPapDefault
 	{margin-bottom:8.0pt;
-	line-height:115%;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.0pt 842.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
 	margin:1.0in 1.0in 1.0in 1.0in;}
 div.WordSection1
 	{page:WordSection1;}
@@ -57,118 +61,439 @@ div.WordSection1
 
 <div class=WordSection1>
 
-<p class=MsoNormal align=center style='text-align:center'><b><span
-style='font-size:16.0pt;line-height:115%;font-family:"Times New Roman",serif'>Exploring
-Titanic Dataset with Pandas</span></b></p>
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%'>Exploring
+Trends in Global Temperature</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>1.
-Import the Required Libraries</span></b></p>
+<p class=MsoNormal>Name(English): James</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>You should
-import Pandas (import pandas as pd) and Matplotlib (import matplotlib.pyplot as
-plt) for data manipulation and visualization.</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal style='margin-bottom:0in;line-height:13.5pt;background:white'><span
-style='font-size:9.0pt;font-family:Menlo;color:#AF00DB'>import</span><span
-style='font-size:9.0pt;font-family:Menlo;color:#3B3B3B'> </span><span
-style='font-size:9.0pt;font-family:Menlo;color:#267F99'>pandas</span><span
-style='font-size:9.0pt;font-family:Menlo;color:#3B3B3B'> </span><span
-style='font-size:9.0pt;font-family:Menlo;color:#AF00DB'>as</span><span
-style='font-size:9.0pt;font-family:Menlo;color:#3B3B3B'> </span><span
-style='font-size:9.0pt;font-family:Menlo;color:#267F99'>pd</span></p>
+<p class=MsoNormal>Objective</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>This project aims to analyze and visualize trends in global
+temperature over the past century using historical temperature data.</p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>2. Load
-the Dataset</span></b></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Load the
-Titanic dataset from a CSV file named 'titanic.csv' into a Pandas DataFrame.</span></p>
+<p class=MsoNormal>Data Source</p>
 
-<p class=MsoNormal style='margin-bottom:0in;line-height:13.5pt;background:white'><span
-style='font-size:9.0pt;font-family:Menlo;color:#3B3B3B'>&nbsp;</span></p>
+<p class=MsoNormal>You can use the &quot;nycflights13&quot; package in R, which
+includes a dataset called &quot;weather&quot; containing historical weather
+data from New York City airports.</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>3. Data
-Exploration</span></b></p>
+<p class=MsoNormal>Steps</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Display
-the first few rows of the dataset to understand its structure.</span></p>
+<p class=MsoNormal>1. Data Exploration: <u>Load the necessary libraries</u> and
+<u>explore the &quot;weather&quot; dataset to understand its structure and
+variables</u>. Identify the variables related to temperature and extract the
+relevant data.</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>Command</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Print
-information about the columns and their data types.</span></p>
+<p class=MsoNormal><span style='font-family:"Lucida Console"'>library(tidyverse)</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>Output</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Show summary
-statistics for numerical columns (e.g., mean, min, max, etc.).</span></p>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=767
+ style='width:575.45pt;background:white'>
+ <tr>
+  <td valign=top style='padding:0in 0in 6.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:blue'>library(tidyverse)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>&#9472;&#9472; <b>Attaching core tidyverse packages</b>
+  &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
+  tidyverse 2.0.0 &#9472;&#9472;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#10004;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> dplyr     1.1.4     </span><span style='font-size:10.0pt;
+  font-family:"Segoe UI Emoji",sans-serif;color:black'>&#10004;</span><span
+  style='font-size:10.0pt;font-family:"Lucida Console";color:black'> readr    
+  2.1.5</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#10004;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> forcats   1.0.0     </span><span style='font-size:10.0pt;
+  font-family:"Segoe UI Emoji",sans-serif;color:black'>&#10004;</span><span
+  style='font-size:10.0pt;font-family:"Lucida Console";color:black'> stringr  
+  1.5.1</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#10004;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> ggplot2   3.5.1     </span><span style='font-size:10.0pt;
+  font-family:"Segoe UI Emoji",sans-serif;color:black'>&#10004;</span><span
+  style='font-size:10.0pt;font-family:"Lucida Console";color:black'> tibble   
+  3.2.1</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#10004;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> lubridate 1.9.3     </span><span style='font-size:10.0pt;
+  font-family:"Segoe UI Emoji",sans-serif;color:black'>&#10004;</span><span
+  style='font-size:10.0pt;font-family:"Lucida Console";color:black'> tidyr    
+  1.3.1</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#10004;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> purrr     1.0.2     </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>&#9472;&#9472; <b>Conflicts</b>
+  &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
+  tidyverse_conflicts() &#9472;&#9472;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#10006;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> dplyr::filter() masks stats::filter()</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#10006;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> dplyr::lag()    masks stats::lag()</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#8505;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> Use the conflicted package to force all conflicts to become
+  errors</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:0in 0in 6.0pt 4.5pt'></td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:0in 0in 6.0pt 4.5pt'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.95pt'>
+   <tr>
+    <td width=1 valign=top style='width:.75pt;padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Lucida Console";color:blue'>&gt; </span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+ </tr>
+</table>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>4. Data
-Cleaning</span></b></p>
+<p class=MsoNormal>Explain the command</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Identify
-and handle missing values in the dataset (e.g., fill missing age values with
-median).</span></p>
+<p class=MsoNormal>To include a library, R uses a library function and provides
+the name of the library. In this case, we use tidyverse library.</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Perform
-any necessary data transformations or cleaning steps.</span></p>
+<p class=MsoNormal>Explain the output</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>The output indicates that the version of tidyverse library
+is 2.0.0</p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>5. Data
-Analysis</span></b></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Calculate
-and display the count of passengers by gender.</span></p>
+<p class=MsoNormal>Command</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%;font-family:
+"Lucida Console"'>library(nycflights13)</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Compute
-the average age of passengers.</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%;font-family:
+"Lucida Console"'>weather</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Determine
-the survival rate by passenger class.</span></p>
+<p class=MsoNormal>Output</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=767
+ style='width:575.45pt;background:white'>
+ <tr>
+  <td valign=top style='padding:0in 0in 6.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:blue'>library(nycflights13)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:blue'>&gt; weather</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'># A tibble: 26,115 × 15</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>   origin  year month   day  hour  temp  dewp humid wind_dir</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>   <i>&lt;chr&gt;</i>  <i>&lt;int&gt;</i> <i>&lt;int&gt;</i> <i>&lt;int&gt;</i>
+  <i>&lt;int&gt;</i> <i>&lt;dbl&gt;</i> <i>&lt;dbl&gt;</i> <i>&lt;dbl&gt;</i>   
+  <i>&lt;dbl&gt;</i></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 1 EWR     <u>2</u>013     1     1     1  39.0  26.1  59.4     
+  270</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 2 EWR     <u>2</u>013     1     1     2  39.0  27.0  61.6     
+  250</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 3 EWR     <u>2</u>013     1     1     3  39.0  28.0  64.4     
+  240</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 4 EWR     <u>2</u>013     1     1     4  39.9  28.0  62.2     
+  250</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 5 EWR     <u>2</u>013     1     1     5  39.0  28.0  64.4     
+  260</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 6 EWR     <u>2</u>013     1     1     6  37.9  28.0  67.2     
+  240</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 7 EWR     <u>2</u>013     1     1     7  39.0  28.0  64.4     
+  240</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 8 EWR     <u>2</u>013     1     1     8  39.9  28.0  62.2     
+  250</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 9 EWR     <u>2</u>013     1     1     9  39.9  28.0  62.2      260</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>10 EWR     <u>2</u>013     1     1    10  41    28.0  59.6     
+  260</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'># </span><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#8505;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 26,105 more rows</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'># </span><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#8505;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 6 more variables: wind_speed &lt;dbl&gt;, wind_gust
+  &lt;dbl&gt;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>#   precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;,
+  time_hour &lt;dttm&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;word-break:
+  break-all'><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'># </span><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  color:black'>&#8505;</span><span style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> Use `print(n = ...)` to see more rows</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:0in 0in 6.0pt 4.5pt'></td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:0in 0in 6.0pt 4.5pt'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.95pt'>
+   <tr>
+    <td width=1 valign=top style='width:.75pt;padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Lucida Console";color:blue'>&gt; </span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+ </tr>
+</table>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>6. Data
-Visualization</span></b></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Create a
-bar chart to visualize the survival rate by passenger class.</span></p>
+<p class=MsoNormal>Explain the command</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>To include a library, R uses a library function and provides
+the name of the library. In this case, we use nycflights13 library to get
+weather data.</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Add appropriate
-labels and a title to the chart.</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>Explain the output</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>The output indicates the contents of weather data</p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>7.
-Conclusion</span></b></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Summarize
-your findings or insights gained from analyzing the Titanic dataset.</span></p>
+<p class=MsoNormal>Command</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%;font-family:
+"Lucida Console"'>str(weather)</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Reflect on
-the importance of data cleaning and exploration in data analysis.</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>Output</p>
+
+<pre style='background:white;word-break:break-all'><span class=gntyacmbe3b><span
+style='font-family:"Lucida Console";color:blue'>str(weather)</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'><span style='outline: none;
+user-select: text;white-space:pre-wrap !important'>tibble [26,115 × 15] (S3: tbl_df/tbl/data.frame)</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ origin    : chr [1:26115] &quot;EWR&quot; &quot;EWR&quot; &quot;EWR&quot; &quot;EWR&quot; ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ year      : int [1:26115] 2013 2013 2013 2013 2013 2013 2013 2013 2013 2013 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ month     : int [1:26115] 1 1 1 1 1 1 1 1 1 1 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ day       : int [1:26115] 1 1 1 1 1 1 1 1 1 1 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ hour      : int [1:26115] 1 2 3 4 5 6 7 8 9 10 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ temp      : num [1:26115] 39 39 39 39.9 39 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ dewp      : num [1:26115] 26.1 27 28 28 28 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ humid     : num [1:26115] 59.4 61.6 64.4 62.2 64.4 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ wind_dir  : num [1:26115] 270 250 240 250 260 240 240 250 260 260 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ wind_speed: num [1:26115] 10.36 8.06 11.51 12.66 12.66 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ wind_gust : num [1:26115] NA NA NA NA NA NA NA NA NA NA ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ precip    : num [1:26115] 0 0 0 0 0 0 0 0 0 0 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ pressure  : num [1:26115] 1012 1012 1012 1012 1012 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ visib     : num [1:26115] 10 10 10 10 10 10 10 10 10 10 ...</span></span></pre><pre
+style='background:white;word-break:break-all'><span class=gntyacmbo3b><span
+style='font-family:"Lucida Console";color:black'> $ time_hour : POSIXct[1:26115], format: &quot;2013-01-01 01:00:00&quot; ...</span></span></span></span></pre>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the command</p>
+
+<p class=MsoNormal>To show the structure of the data, we used str command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the output</p>
+
+<p class=MsoNormal>The weather data has 26,115 rows and 15 columns. The wind_gust
+column has a lot of missing values.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>2. Data Cleaning: Clean the data by handling missing values,
+outliers, and any inconsistencies in the dataset that may affect the analysis.</p>
+
+<p class=MsoNormal>Command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>3. Data Analysis: Calculate summary statistics for the
+temperature variables (e.g., mean, median, standard deviation) and visualize
+the distribution of temperatures over time using line plots.</p>
+
+<p class=MsoNormal>Command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>4. Trend Analysis: Use statistical techniques (e.g., linear
+regression) to analyze trends in global temperature over the years. Create a
+regression model to predict future temperature trends based on historical data.</p>
+
+<p class=MsoNormal>Command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the command</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Explain the output</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>5. Insights and Interpretation: Provide insights and
+interpretations based on the data analysis and visualizations. Discuss any
+observed trends, patterns, or anomalies in global temperature trends.</p>
 
 </div>
 
